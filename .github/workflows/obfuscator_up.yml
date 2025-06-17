@@ -25,6 +25,7 @@ jobs:
         run: |
           if [ ! -f _worker.js.backup ]; then
             echo "备份文件 _worker.js.backup 不存在，正在创建..."
+            curl -o 明文源码.js https://raw.githubusercontent.com/cmliu/epeius/main/_worker.js
             cp _worker.js _worker.js.backup
           fi
 
